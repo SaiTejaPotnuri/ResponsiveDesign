@@ -1,0 +1,2541 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+
+}
+
+
+
+
+
+
+
+.container {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: auto;
+    max-height: auto;
+
+
+
+
+}
+
+.part1Background {
+    width: 100%;
+    height: 43rem;
+    background-image: url('../assets/images/cover.jpg');
+    background-size: cover !important;
+    background-position: bottom !important;
+    background-attachment: fixed !important;
+    position: relative;
+    // margin-bottom: 4rem;
+
+    //  opacity: 0.5;
+
+}
+
+
+.part1BottomBackgroundImage {
+
+    content: '';
+    display: block;
+    position: absolute;
+    height: 45px;
+    bottom: -1px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-image: url('../assets/images/borderImageStyle.svg');
+}
+
+
+
+.part1Background::after {
+    content: '';
+    background: rgba(229, 226, 226, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 43rem;
+}
+
+.part1Main {
+
+    position: absolute;
+    width: 100%;
+    height: 43rem;
+
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-between;
+    gap: 5.5rem;
+    align-items: center;
+
+}
+
+.part1Body {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100vh !important;
+    z-index: 40;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    align-items: center;
+}
+
+.part1Header {
+
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    position: initial;
+    height: 5rem;
+    z-index: 40;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+
+
+
+}
+
+
+
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+
+}
+
+
+
+.menu ul li a {
+    color: rgba(0, 0, 0, .8);
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: .5px;
+    line-height: 70px;
+    padding: 0 20px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+.menu ul li a:hover,
+.active {
+    text-decoration: line-through;
+    color: #fe6572 !important;
+    cursor: pointer;
+}
+
+.colorToAnchor {
+    color: #fe6572 !important;
+    text-decoration: line-through !important;
+
+}
+
+.part1Body .headText {
+    font-family: 'Fredoka One', cursive;
+    font-weight: 700;
+    font-size: 3.4em;
+    letter-spacing: 4px;
+    color: #000;
+    text-align: center;
+
+}
+
+.part1Body .productDesigneText {
+    margin-top: 2.5rem;
+    background: #3a3f51 !important;
+    color: #fff !important;
+    font-size: 20px !important;
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.part1ButtonsStyleDiv {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.part1ButtonsStyle {
+    width: fit-content;
+    cursor: pointer;
+    height: auto;
+    padding: 3px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0.8rem 2.2rem;
+    text-align: center;
+    vertical-align: middle;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.toggleIcon {
+    display: none;
+}
+
+.socialMediaIconsPart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+
+
+}
+
+.socialMediaIconsPart a {
+    text-decoration: none;
+    color: #000;
+
+    padding: 15px;
+}
+
+.socialMediaIconsPart a img {
+
+    height: 18px;
+    cursor: pointer;
+}
+
+
+.sideBarMenu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.sideBarMenu ul li {
+    list-style: none;
+}
+
+
+.sideBarMenu ul li a {
+    color: #212529;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: .5px;
+    line-height: 70px;
+    padding: 0 20px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+.sideBarMenu ul li a:hover,
+.active {
+    text-decoration: line-through;
+    color: #fe6572 !important;
+    cursor: pointer;
+}
+
+.headerDivAfterScroll {
+    transition: all .3s;
+    background: white !important;
+    z-index: 500;
+    position: fixed;
+    box-shadow: 0 5px 10px 5px rgb(0 0 0 / 5%);
+}
+
+.part2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    padding: 5px;
+    height: auto;
+    max-height: auto;
+    text-align: start;
+    word-wrap: break-word;
+    padding-top: 7rem;
+
+}
+
+
+.part3 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    height: auto;
+    padding: 5px;
+    background: #e6e6e6 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5.5rem;
+    padding-top: 10rem;
+
+}
+
+
+.part3 .part3ContainerHeading {
+
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+
+
+}
+
+.part3 .part3ContainerHeading h2 {
+    font-weight: 700 !important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase;
+    color: #fe6572;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    line-height: 1.2;
+    text-align: center;
+
+}
+
+.part3 .part3ContainerHeading::before {
+    content: '';
+    display: block;
+    height: 150px;
+    width: 270px;
+    position: absolute;
+
+    opacity: .15;
+    background-image: url('../assets/images/part3HeaderBackground.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+
+.cardsinPart3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 12rem;
+    flex-wrap: wrap;
+
+}
+
+.cardIcons1 {
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 29px;
+    color: #0abb87 !important;
+
+}
+
+.cardIcons3 {
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 24px;
+    color: #ea4141 !important;
+    padding: 5px;
+    border: 3px solid #ea4141;
+    transform: rotate(90deg);
+
+}
+
+
+.cardIcons2 {
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 29px;
+    color: #ff9d36 !important;
+
+
+}
+
+.card1IconBackground {
+
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #cef5ea !important;
+
+}
+
+
+.card2IconBackground {
+
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #ffe6cc !important;
+
+}
+
+.card3IconBackground {
+
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #fcd0df !important;
+
+}
+
+
+
+
+.card1SubHeader {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #212529;
+
+}
+
+.iconAndSubHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem
+}
+
+
+
+.card1Para {
+    color: #6c757d !important;
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+.part4 {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.part5 {
+    width: 100%;
+    height: auto;
+    background: #e6e6e6 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 10px;
+    margin: 0px;
+
+}
+
+.part5page {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+
+    margin: 0px;
+
+}
+
+.part5 .part5Header {
+    width: 100%;
+    height: 10rem;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // gap: 3rem;
+}
+
+.part5Mainpart {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: auto;
+    //border: 1px solid greenyellow;
+    margin-bottom: 10rem;
+    padding: 10px;
+
+}
+
+.part5Subpart {
+    width: 100%;
+    height: 10rem;
+    background: #fff;
+}
+
+.part4SubPart {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+
+.part5SubPart1,
+.part5SubPart2,
+.part5SubPart3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    gap: 2rem;
+}
+
+
+
+.part5SubPart5 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.part5SubPart5SubPart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    // gap: 2rem;
+}
+
+
+
+
+.part5HeaderDialogMainPart {
+    padding: 15px;
+}
+
+.part5DialogImg {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.25rem !important;
+    margin-bottom: 5rem;
+
+}
+
+.part5DialogImg2 {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.25rem !important;
+    margin-bottom: 1rem;
+}
+
+.part5HeaderDialogMainPart p {
+    margin-bottom: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+.part5HeaderDialogMainPart h5 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #212529;
+    text-align: left;
+}
+
+.part5mainpartlanguagesList ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+.part5mainpartlanguagesList ul li {
+    list-style: none;
+    border-radius: 0.25rem !important;
+    border: 1px solid #dee2e6
+}
+
+.part5mainpartlanguagesList ul li span {
+
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.part5footerButton {
+    height: 3rem;
+    padding: 0.8rem 2.2rem;
+}
+
+.turnTheImage{
+    transform: rotate(90deg);
+}
+.turnArrowIcon{
+    transform: rotate(320deg);
+}
+
+
+
+@media screen and (max-width:1218px) {
+    
+    .part5Subpart{
+        gap:3rem !important;
+    }
+    .part5Subpart1{
+        gap: 9rem !important;
+    }
+
+}
+@media screen and (max-width:800px) {
+    
+    .part5Subpart1{
+        justify-content: center !important;
+        gap: 2rem !important;
+    }
+}
+
+
+@media screen and (min-width:285px) and (max-width:305px) {
+    .part5CommentSection{
+        width: 15rem !important;
+    }
+}
+@media screen and (max-width:284px) {
+    .part5CommentSection{
+        width: 10rem !important ;
+    }
+}
+
+.part5Subpart {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:0px;
+    
+}
+ .part5CommentSection {
+    width: 18rem;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    
+}
+.part5Subpart1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:0px;
+    flex-wrap: wrap;
+
+}
+ .part5CommentSection .commentIcon img {
+    width: 100%;
+    height: 3.5rem;
+    object-fit: fill;
+}
+
+.part5CommentSection h4 {
+    font-weight: 700 !important;
+    margin-top: 1rem !important;
+    letter-spacing: 4px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    color: #212529;
+}
+
+.part5CommentSection p {
+    font-weight: 400 !important;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.5;
+    color: #212529;
+}
+
+
+@media screen and (min-width:993px) and (max-width:1152px) {
+
+    .part5SubPart3 {
+        flex-direction: row !important;
+        align-items: flex-start !important;
+        gap: 0px !important;
+        margin-top: 5px;
+    }
+
+    .part5Img1 {
+        width: 450px !important;
+    }
+
+    .part5SubPart3 .part5Img1:nth-child(3) {
+        margin-top: 10px;
+    }
+
+    .part5SubPart5SubPart {
+        width: 50% !important;
+        gap: 2rem;
+    }
+
+    .part5SubPart5 {
+        align-items: flex-start !important;
+    }
+
+
+
+
+}
+
+@media screen and (min-width:730px) and (max-width:993px) {
+
+    .part5SubPart1,
+    .part5SubPart2,
+    .part5SubPart3 {
+        gap: 0px !important;
+    }
+
+    .part5Img1 {
+        width: 650px !important;
+        margin-top: 2rem;
+    }
+
+    .part5SubPart3 .part5Img1:nth-child(3) {
+        margin-top: 0px;
+    }
+
+    .part5SubPart5 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .part5SubPart5SubPart {
+        width: 100% !important;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+
+}
+
+@media screen and (min-width:590px) and (max-width:730px) {
+
+    .part5SubPart1,
+    .part5SubPart2,
+    .part5SubPart3 {
+        gap: 0px !important;
+    }
+
+    .part5Nav ul li {
+        font-size: 18px !important;
+    }
+
+    .part5Img1 {
+        width: 550px !important;
+        margin-top: 2rem;
+    }
+
+    .part5SubPart3 .part5Img1:nth-child(3) {
+        margin-top: 0px;
+    }
+
+    .part5SubPart5 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .part5SubPart5SubPart {
+        width: 100% !important;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+
+}
+
+@media screen and (min-width:500px) and (max-width:590px) {
+
+    .part5SubPart1,
+    .part5SubPart2,
+    .part5SubPart3 {
+        gap: 0px !important;
+    }
+
+    .part5Img1 {
+        width: 450px !important;
+        margin-top: 2rem;
+    }
+
+    .part5SubPart3 .part5Img1:nth-child(3) {
+        margin-top: 0px;
+    }
+
+    .part5SubPart5 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .part5SubPart5SubPart {
+        width: 100% !important;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+
+}
+
+@media screen and (min-width:430px) and (max-width:500px) {
+
+    .part5SubPart1,
+    .part5SubPart2,
+    .part5SubPart3 {
+        gap: 0px !important;
+    }
+
+
+
+    .part5Img1 {
+        width: 400px !important;
+        margin-top: 2rem;
+    }
+
+    .part5SubPart3 .part5Img1:nth-child(3) {
+        margin-top: 0px;
+    }
+
+    .part5SubPart5 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .part5SubPart5SubPart {
+        width: 100% !important;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+
+}
+
+@media screen and (min-width:380px) and (max-width:430px) {
+
+    .part5SubPart1,
+    .part5SubPart2,
+    .part5SubPart3 {
+        gap: 0px !important;
+    }
+
+
+
+    .part5Img1 {
+        width: 350px !important;
+        margin-top: 2rem;
+    }
+
+    .part5SubPart3 .part5Img1:nth-child(3) {
+        margin-top: 0px;
+    }
+
+    .part5SubPart5 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .part5SubPart5SubPart {
+        width: 100% !important;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+
+}
+
+@media screen and (min-width:330px) and (max-width:380px) {
+
+    .part5SubPart1,
+    .part5SubPart2,
+    .part5SubPart3 {
+        gap: 0px !important;
+    }
+
+    .part5Imag1Title h5 {
+
+        font-size: 1rem !important;
+    }
+
+    .part5Imag1Title .titleParagraph {
+        font-size: 0.8rem !important;
+    }
+
+    .part5Imag1Title {
+        left: 15% !important;
+        right: 15% !important;
+        bottom: 50% !important;
+        top: 50% !important;
+
+    }
+
+
+
+    .part5Img1 {
+        width: 300px !important;
+        margin-top: 2rem;
+    }
+
+    .part5SubPart3 .part5Img1:nth-child(3) {
+        margin-top: 0px;
+    }
+
+    .part5SubPart5 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .part5SubPart5SubPart {
+        width: 100% !important;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+
+}
+
+@media screen and (min-width:287px) and (max-width:330px) {
+
+    .part5SubPart1,
+    .part5SubPart2,
+    .part5SubPart3 {
+        gap: 0px !important;
+    }
+
+
+
+    .part5Img1 {
+        width: 250px !important;
+        margin-top: 2rem;
+    }
+
+    .part5SubPart3 .part5Img1:nth-child(3) {
+        margin-top: 0px;
+    }
+
+    .part5Imag1Title h5 {
+
+        font-size: 1rem !important;
+    }
+
+    .part5Imag1Title .titleParagraph {
+        font-size: 0.8rem !important;
+    }
+
+    .part5Imag1Title {
+        left: 15% !important;
+        right: 15% !important;
+        bottom: 50% !important;
+        top: 50% !important;
+
+
+    }
+
+    .part5SubPart5 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .part5SubPart5SubPart {
+        width: 100% !important;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+}
+
+@media screen and (min-width:180px) and (max-width:287px) {
+
+    .part5SubPart1,
+    .part5SubPart2,
+    .part5SubPart3 {
+        gap: 0px !important;
+    }
+
+
+
+    .part5Img1 {
+        width: 200px !important;
+        margin-top: 2rem;
+    }
+
+    .part5Header h2 {
+        font-size: 1.7rem;
+    }
+
+    .part5Header h2::before {
+        font-size: 1.7rem;
+        width: 240px !important;
+    }
+
+    .part5Imag1Title h5 {
+
+        font-size: 1rem !important;
+    }
+
+    .part5Imag1Title .titleParagraph {
+        font-size: 0.7rem !important;
+    }
+
+    .part5Imag1Title {
+        left: 15% !important;
+        right: 15% !important;
+        bottom: 50% !important;
+        top: 50% !important;
+
+    }
+
+    .part5SubPart3 .part5Img1:nth-child(3) {
+        margin-top: 0px;
+    }
+
+    .part5SubPart5 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .part5SubPart5SubPart {
+        width: 100% !important;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+
+}
+
+
+
+
+
+
+.part5Header h2 {
+    font-weight: 700 !important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase;
+    color: #fe6572;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+
+
+
+}
+
+.part5Header h2::before {
+    content: '';
+    display: block;
+    height: 150px;
+    width: 270px;
+    position: absolute;
+    opacity: 0.20;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    pointer-events: none;
+    background-image: url('../assets/images/part5HeaderBackground.svg');
+}
+
+
+.part5Nav ul {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.part5Nav ul li {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: all .3s;
+    line-height: 1.5;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.part5NavLiActive {
+    color: #fe6572 !important;
+    text-decoration: line-through;
+
+}
+
+.part5Img1 {
+    width: 350px;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0 5px 10px 5px rgb(0 0 0 / 5%);
+    border-radius: 7px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 5px 10px 5px rgb(0 0 0 / 5%);
+    border-radius: 7px;
+}
+
+.part5Img1 .card1 {
+    position: relative;
+
+}
+
+.part5Img1 .card1 img {
+    transition: transform .2s;
+    width: 100%;
+    height: 100%;
+    // margin: 0 auto;
+    object-fit: fill;
+}
+
+
+
+.part5Img1:hover {
+
+    .part5Imag1Title {
+        transform: scale(1.2) !important;
+        transition: transform .3s, -webkit-transform .3s, -moz-transform .3s, -o-transform .3s;
+        color: #000;
+
+    }
+
+    .card1 img {
+        transform: scale(1.1);
+        opacity: 0.3;
+
+    }
+
+}
+
+
+
+.part5Imag1Title {
+    position: absolute;
+    z-index: 10;
+    left: 20%;
+    right: 20%;
+    bottom: 50%;
+    top: 50%;
+    transition: transform .3s, -webkit-transform .3s, -moz-transform .3s, -o-transform .3s;
+    transform: scale(0) !important;
+}
+
+.part5Imag1Title h5 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    color: #000;
+
+
+}
+
+.part5Imag1Title .titleParagraph {
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+
+}
+
+
+.part6 {
+    width: 100%;
+    height: 50rem;
+    background: #fe6572 !important;
+}
+
+
+.goUpDiv {
+
+    width: 50px;
+    //  padding: 15px;
+    height: 50px;
+    right: 0;
+    bottom: 30px;
+    position: fixed;
+    z-index: 1000;
+    margin-right: 2rem;
+    border-radius: 50%;
+    background-color: #fe6572;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.gotoTop {
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+
+}
+
+.part2ContactmeButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+
+}
+
+
+.part2Container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+
+
+}
+
+.part2Container .aboutImageDiv {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part2Container .aboutImageDiv img {
+    width: 80%;
+    max-width: 80%;
+    height: 29rem;
+    border-radius: 7px;
+    object-fit: fill;
+    position: relative;
+    z-index: 5;
+
+}
+
+
+
+.part2Container .aboutImageDiv::after {
+    width: 30%;
+    max-width: 30%;
+    height: 29rem;
+    content: '';
+    display: block;
+    border: 2px solid #000;
+    border-radius: 7px;
+    position: absolute;
+    transform: translate(1.5rem, -1rem);
+
+
+}
+
+.aboutMeParagraphDiv {
+    width: 60%;
+    max-width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.headingpart2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem !important;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left;
+
+
+}
+
+.headingParagraphpart {
+    max-width: 95%;
+}
+
+.headingParagraphpart p {
+    margin-bottom: 1.5rem !important;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+.aboutmeoptionsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.aboutmePHOTOSHOPDiv p {
+    margin: 7rem;
+    letter-spacing: 1px;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    line-height: 1.2;
+    width: 98px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
+
+.part4Heading {
+    margin-bottom: 130px;
+    padding-top: 7rem;
+    width: 100%;
+    height: fit-content;
+
+}
+
+.part4Heading ul {
+    text-decoration: none;
+    color: #fe6572;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.part4Heading ul li {
+    list-style: none;
+    padding: 0.8rem 2.2rem;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    transition: color .3s;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    line-height: 1.5;
+
+}
+
+.part4Heading ul li:hover {
+    opacity: 0.5;
+}
+
+
+
+.part4HeadingItemActiveStyle {
+    background: -webkit-linear-gradient(348deg, #fe6572, #ed305f);
+    box-shadow: 0 2px 7px 1px rgb(242 65 101 / 27%);
+    color: #fff;
+    border-radius: 0.25rem;
+    transition: color .3s;
+
+}
+
+.part4mainpart {
+    width: 96%;
+    height: auto;
+
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 20px;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part4EducationPart,
+.part4ExperiencePart {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 3rem;
+
+}
+
+//part4EducationPartContainer1
+
+.part4EducationPart .part4EducationPartContainer,
+.part4ExperiencePart .part4EducationPartContainer {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    flex-direction: column;
+}
+
+.part4ExperiencePart .part4EducationPartContainer2 {
+
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    flex-direction: column;
+
+}
+
+.part4EducationPartContainer2 .messagesBox:nth-child(1) {
+    margin-top: 8rem;
+}
+
+
+
+.messagesBox {
+    width: 35rem;
+    height: auto;
+    border-radius: 7px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 2rem;
+    position: relative;
+    background: #e6e6e6;
+
+}
+
+.messagesBox::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: #e6e6e6;
+    border-radius: 7px;
+    bottom: -12px;
+    left: 50%;
+    margin-left: -17.5px;
+    transform: rotate(-45deg);
+    position: absolute;
+}
+
+.messagesBox h5 {
+    margin-bottom: 1rem !important;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.messagesBox h5 span {
+    color: #fe6572 !important;
+}
+
+
+.part4ExperiencePart .messagesBox h4 {
+    letter-spacing: 1px;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #212529;
+    text-align: left;
+
+}
+
+.messagesBox h6 {
+    letter-spacing: 1px;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.2;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.messagesBox p {
+    margin-bottom: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1020px) and (max-width:1200px) {
+
+    .messagesBox {
+        width: 28rem;
+    }
+}
+
+@media screen and (min-width:660px) and (max-width:1020px) {
+
+    .messagesBox {
+        width: 38rem;
+    }
+
+    .part4EducationPartContainer2 .messagesBox:nth-child(1) {
+        margin-top: 0rem !important;
+    }
+
+    .part4ExperiencePart .part4EducationPartContainer2 {
+        width: 100% !important;
+        gap: 3rem !important;
+
+    }
+
+    .part4EducationPart,
+    .part4ExperiencePart {
+        flex-wrap: wrap !important;
+
+    }
+
+
+}
+
+@media screen and (min-width:513px) and (max-width:660px) {
+
+    .messagesBox {
+        width: 30rem;
+    }
+
+    .part4EducationPartContainer2 .messagesBox:nth-child(1) {
+        margin-top: 0rem !important;
+    }
+
+    .part4ExperiencePart .part4EducationPartContainer2 {
+        width: 100% !important;
+        gap: 3rem !important;
+
+    }
+
+    .part4EducationPart,
+    .part4ExperiencePart {
+        flex-wrap: wrap !important;
+
+    }
+}
+
+
+@media screen and (min-width:353px) and (max-width:513px) {
+
+    .messagesBox {
+        width: 20rem;
+    }
+
+    .part4EducationPartContainer2 .messagesBox:nth-child(1) {
+        margin-top: 0rem !important;
+    }
+
+    .part4ExperiencePart .part4EducationPartContainer2 {
+        width: 100% !important;
+        gap: 3rem !important;
+
+    }
+
+    .part4EducationPart,
+    .part4ExperiencePart {
+        flex-wrap: wrap !important;
+
+    }
+
+}
+
+@media screen and (min-width:300px) and (max-width:353px) {
+
+    .messagesBox {
+        width: 17rem;
+    }
+
+    .part4EducationPartContainer2 .messagesBox:nth-child(1) {
+        margin-top: 0rem !important;
+    }
+
+    .part4ExperiencePart .part4EducationPartContainer2 {
+        width: 100% !important;
+        gap: 3rem !important;
+
+    }
+
+    .part4EducationPart,
+    .part4ExperiencePart {
+        flex-wrap: wrap !important;
+
+    }
+
+}
+
+
+@media screen and (max-width:300px) {
+
+    .messagesBox {
+        width: 14rem;
+    }
+
+    .part4EducationPartContainer2 .messagesBox:nth-child(1) {
+        margin-top: 0rem !important;
+    }
+
+    .part4ExperiencePart .part4EducationPartContainer2 {
+        width: 100% !important;
+        gap: 3rem !important;
+
+    }
+
+    .part4EducationPart,
+    .part4ExperiencePart {
+        flex-wrap: wrap !important;
+
+    }
+
+}
+
+
+
+
+@media screen and (max-width:280px) {
+
+
+    .part2Container {
+        flex-wrap: wrap !important;
+
+    }
+
+    .part2Container .aboutImageDiv img {
+        min-width: 12rem !important;
+        height: 14rem;
+
+    }
+
+    .part2Container .aboutImageDiv::after {
+        display: none;
+
+    }
+
+    .aboutMeParagraphDiv {
+        width: 100%;
+        max-width: 100%;
+        align-items: center !important;
+        padding: 5px;
+    }
+
+    .headingpart2 {
+        text-align: center !important;
+        font-size: 1rem;
+    }
+
+    .headingParagraphpart p {
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .aboutmeoptionsDiv {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutmePHOTOSHOPDiv p {
+        margin: 4rem !important;
+
+    }
+
+    .part4Heading ul li {
+        padding: 0.7rem 1rem !important;
+        font-size: 0.8rem;
+
+    }
+
+
+
+
+
+}
+
+
+
+
+@media screen and (min-width:280px) and (max-width:350px) {
+
+
+    .part2Container {
+        flex-wrap: wrap !important;
+
+    }
+
+    .part2Container .aboutImageDiv img {
+        min-width: 16rem !important;
+        height: 19rem;
+
+    }
+
+    .part2Container .aboutImageDiv::after {
+        display: none;
+
+    }
+
+    .aboutMeParagraphDiv {
+        width: 90%;
+        max-width: 90%;
+
+        align-items: center !important;
+    }
+
+    .headingpart2 {
+        text-align: center !important;
+        font-size: 1rem;
+    }
+
+    .headingParagraphpart p {
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .aboutmeoptionsDiv {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutmePHOTOSHOPDiv p {
+        margin: 4.5rem !important;
+
+    }
+
+
+    .part4Heading ul li {
+        padding: 0.8rem 1.2rem !important;
+
+    }
+
+
+
+}
+
+
+
+
+@media screen and (min-width:350px) and (max-width:402px) {
+
+
+    .part2Container {
+        flex-wrap: wrap !important;
+
+    }
+
+    .part2Container .aboutImageDiv img {
+        min-width: 20rem !important;
+        height: 26rem;
+
+    }
+
+    .part2Container .aboutImageDiv::after {
+        display: none;
+
+    }
+
+    .aboutMeParagraphDiv {
+        width: 90%;
+        max-width: 90%;
+
+        align-items: center !important;
+    }
+
+    .headingpart2 {
+        text-align: center !important;
+        font-size: 1.5rem;
+    }
+
+    .headingParagraphpart p {
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .aboutmeoptionsDiv {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutmePHOTOSHOPDiv p {
+        margin: 4.5rem !important;
+
+    }
+
+
+
+}
+
+
+
+@media screen and (min-width:402px) and (max-width:450px) {
+
+    .part2Container {
+        flex-wrap: wrap !important;
+
+    }
+
+    .part2Container .aboutImageDiv img {
+        min-width: 23rem !important;
+        height: 20rem;
+
+    }
+
+    .part2Container .aboutImageDiv::after {
+        display: none;
+
+    }
+
+    .aboutMeParagraphDiv {
+        width: 90%;
+        max-width: 90%;
+
+        align-items: center !important;
+    }
+
+    .headingpart2 {
+        text-align: center !important;
+        font-size: 1.2rem;
+    }
+
+    .headingParagraphpart p {
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .aboutmeoptionsDiv {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutmePHOTOSHOPDiv p {
+        margin: 4.5rem !important;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width:450px) and (max-width:532px) {
+
+    .part2Container {
+        flex-wrap: wrap !important;
+
+    }
+
+    .part2Container .aboutImageDiv img {
+        min-width: 26rem !important;
+        height: 25rem;
+    }
+
+    .part2Container .aboutImageDiv::after {
+        display: none;
+
+    }
+
+    .aboutMeParagraphDiv {
+        width: 90%;
+        max-width: 90%;
+
+        align-items: center !important;
+    }
+
+    .headingpart2 {
+        text-align: center !important;
+    }
+
+    .headingParagraphpart p {
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .aboutmeoptionsDiv {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}
+
+
+
+
+
+@media screen and (min-width:532px) and (max-width:654px) {
+    .part2Container {
+        flex-wrap: wrap !important;
+
+    }
+
+
+    .part2Container .aboutImageDiv img {
+        min-width: 31rem !important;
+        height: 36rem;
+    }
+
+    .part2Container .aboutImageDiv::after {
+        display: none;
+
+    }
+
+    .aboutMeParagraphDiv {
+        width: 84%;
+        max-width: 84%;
+        align-items: center !important;
+    }
+
+    .headingpart2 {
+        text-align: center !important;
+    }
+
+    .headingParagraphpart p {
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .aboutmeoptionsDiv {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+@media screen and (min-width:654px) and (max-width:767px) {
+    .part2Container {
+        flex-wrap: wrap !important;
+
+    }
+
+
+    .part2Container .aboutImageDiv img {
+        min-width: 37rem !important;
+        height: 42rem;
+    }
+
+    .part2Container .aboutImageDiv::after {
+        display: none;
+    }
+
+    .aboutMeParagraphDiv {
+        width: 80%;
+        max-width: 80%;
+        align-items: center !important;
+    }
+
+    .headingpart2 {
+        text-align: center !important;
+    }
+
+    .headingParagraphpart p {
+        text-align: center !important;
+        width: 30rem;
+    }
+
+    .aboutmeoptionsDiv {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+@media screen and (min-width:1001px) and (max-width:1076px) {
+    .part2Container .aboutImageDiv img {
+        width: 70%;
+        max-width: 70%;
+        height: 23rem;
+
+    }
+
+    .part2Container .aboutImageDiv::after {
+        width: 26%;
+        max-width: 26%;
+        height: 23rem;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:767px) and (max-width:1000px) {
+    .part2Container .aboutImageDiv img {
+        width: 80%;
+        max-width: 80%;
+        height: 20rem;
+
+    }
+
+    .part2Container .aboutImageDiv::after {
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (max-width:1020px) {
+    .part1BottomBackgroundImage {
+        height: 28px !important;
+    }
+
+}
+
+
+
+@media screen and (min-width:210px) and (max-width:360px) {
+    .sideBarMenu ul li a {
+        line-height: 40px;
+        padding: 0 10px;
+        font-size: 10px;
+
+    }
+
+    .part1Body .headText {
+
+        font-size: 2rem !important;
+    }
+
+    .productDesigneText {
+        margin-top: 1rem;
+    }
+
+    .part1ButtonsStyleDiv {
+        gap: 0.5rem;
+        margin-top: 1rem !important;
+    }
+
+    .socialMediaIconsPart {
+        margin-top: 1rem;
+
+    }
+
+    .part1Header {
+        height: 4rem;
+
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width:340px) {
+    .sideBarMenu ul li a {
+        line-height: 64px;
+        padding: 0 10px;
+
+    }
+}
+
+
+
+
+@media screen and (max-width:1000px) {
+
+    .menu {
+        display: none;
+    }
+
+    .toggleIcon {
+        display: inline;
+
+
+    }
+
+    .toggleIcon i {
+        color: #000 !important;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.7rem;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (min-width:1025px) {
+
+    .part1Header {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (min-width:1286px) {
+    .part1Header {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
+
+
+@media screen and (min-width:240px) and (max-width:1024px) {
+    .part1Header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+}
+
+
+
+@media screen and (min-width:361px) and (max-width:1041px) {
+    .menu ul li a {
+        font-size: 11.8px !important;
+    }
+
+
+    .part1Body .headText {
+        font-size: 2.5rem;
+    }
+
+    .part1Body {
+        justify-content: center;
+        padding-bottom: 14rem;
+    }
+
+    .productDesigneText {
+        margin-top: 1.4rem;
+    }
+
+    .part1ButtonsStyleDiv {
+        margin-top: 2rem;
+    }
+
+
+}
+
+
+::ng-deep {
+
+
+
+
+    .part5DialogContainer {
+        .p-dialog .p-dialog-header {
+            border-bottom: 1px solid #dee2e6;
+            border-top-left-radius: 0.3rem;
+            border-top-right-radius: 0.3rem;
+
+        }
+
+        .p-dialog .p-dialog-footer {
+            border-top: 1px solid #fff !important;
+        }
+
+        .p-dialog .p-dialog-content {
+            border-right: 1px solid #fff !important;
+        }
+
+    }
+
+    .widthForSideBar {
+        width: 50% !important;
+    }
+
+    .downloadButton {
+        .p-button.p-button-secondary {
+            color: #ffffff;
+            background: #343a40;
+            border: 1px solid #343a40;
+        }
+
+        .p-button.p-button-secondary:enabled:hover {
+            color: #fff;
+            background-color: #1d2124;
+            border-color: #171a1d;
+        }
+
+        .p-button.p-button-secondary:enabled:focus {
+            box-shadow: 0 0 0 0.2rem rgb(240 57 98 / 19%);
+        }
+    }
+
+
+    .hireButton,
+    .part2ContactmeButton {
+
+
+        .p-button {
+            color: #ffffff;
+            background: linear-gradient(102deg, #fe6572, #ed305f);
+            border: none;
+            box-shadow: 0 2px 7px 1px rgb(242 65 101 / 27%);
+            // transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+
+        }
+
+        .p-button:enabled:hover {
+            background: linear-gradient(102deg, #fe6572, #ed305f);
+            color: #ffffff;
+            border-color: none;
+        }
+
+        .p-button:enabled:focus {
+            box-shadow: 0 0 0 0.2rem rgb(240 57 98 / 50%);
+        }
+
+
+
+    }
+
+
+    .mySidebar {
+        p-sidebar .p-sidebar-header {
+            padding: 0rem !important;
+        }
+    }
+
+
+    .card1 {
+        .p-card {
+            box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+            border-radius: 7px;
+            background-color: #f5f5f5;
+            padding: 2rem 1rem;
+            transition: all .4s;
+            border-top-right-radius: 30px;
+            border-top-left-radius: 30px;
+            box-shadow: 0 5px 10px 5px rgb(0 0 0 / 2%);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+
+        .p-card .p-card-body {
+            padding: 0.25rem;
+        }
+
+        .p-card:hover {
+            background-color: #fff;
+            box-shadow: 0 5px 20px 5px rgb(0 0 0 / 4%);
+
+        }
+
+
+    }
+
+    @media screen and (min-width:270px) and (max-width:350px) {
+        .cardReSizesResponsive {
+            width: 15rem !important;
+        }
+    }
+
+    @media screen and (max-width:270px) {
+        .cardReSizesResponsive {
+            width: 13rem !important;
+            height: 15rem !important;
+
+        }
+
+        .card1IconBackground,
+        .card2IconBackground,
+        .card3IconBackground {
+
+            width: 3rem !important;
+            height: 3rem !important;
+
+        }
+
+        .card1SubHeader,
+        .card2SubHeader,
+        .card3SubHeader {
+            font-size: 1rem !important;
+        }
+
+        .card1Para,
+        .card2Para,
+        .card3Para {
+            font-size: 0.7rem !important;
+        }
+
+        .part3 .part3ContainerHeading h2 {
+            font-size: 1.8rem !important;
+
+        }
+
+        .part3 .part3ContainerHeading::before {
+            height: 150px;
+            width: 240px !important;
+        }
+
+        .p-dialog .p-dialog-header .p-dialog-title {
+            line-height: 1.5;
+            font-family: 'Fredoka One', cursive;
+            font-weight: 500;
+            color: #212529;
+
+        }
+
+
+
+    }
+
+
+
+
+
+
+
+    .part5footerButtonDiv {
+        .p-button.p-button-secondary {
+            color: #ffffff;
+            background: linear-gradient(102deg, #fe6572, #ed305f);
+            box-shadow: 0 2px 7px 1px rgb(242 65 101 / 27%);
+            border: none !important;
+            letter-spacing: 1px;
+            font-weight: 600;
+            padding: 0.8rem 2.2rem;
+            margin-top: 1.5rem !important;
+            text-align: center;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 0.25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .p-button:enabled:hover {
+            background: linear-gradient(102deg, #fe6572, #ed305f);
+            color: #ffffff;
+            border-color: none;
+        }
+
+        .p-button:enabled:focus {
+            box-shadow: 0 0 0 0.2rem rgb(240 57 98 / 50%);
+        }
+
+
+    }
+
+
+    @media screen and (max-width:240px) {
+        .part5DialogContainer {
+            .p-dialog .p-dialog-header {
+                height: 25px !important;
+            }
+
+            .p-dialog .p-dialog-header .p-dialog-title {
+                font-size: 0.90rem !important;
+            }
+
+            .part5footerButton {
+                height: 2.5rem;
+            }
+
+            .p-dialog .p-dialog-footer button {
+                margin-top: 12px !important;
+            }
+
+            .p-dialog .p-dialog-footer {
+                height: 62px;
+                border: none !important;
+            }
+
+            .part5HeaderDialogMainPart p {
+                font-size: 10px !important;
+
+            }
+
+            .part5DialogImg {
+                margin-bottom: 2rem !important;
+            }
+
+            .part5footerButtonDiv .p-button.p-button-secondary {
+                font-size: 0.8rem !important;
+            }
+
+        }
+
+
+    }
+
+
+
+}
+
+::selection {
+    background: 0 0;
+    color: #fe6572;
+}
