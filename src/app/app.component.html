@@ -25,7 +25,8 @@
               <li class="navLink"><a href="#testimonial" class="addColor"
                   (click)="activeLinksWhhileClick($event)">testimonial</a>
               </li>
-              <li class="navLink"><a href="#" class="addColor" (click)="activeLinksWhhileClick($event)">blog</a></li>
+              <li class="navLink"><a href="#blog" class="addColor" (click)="activeLinksWhhileClick($event)">blog</a>
+              </li>
               <li class="navLink"><a href="#" class="addColor" (click)="activeLinksWhhileClick($event)">contact</a></li>
             </ul>
           </div>
@@ -505,7 +506,7 @@
           <div class="commentIcon">
             <img [src]="imagesList.commentSmily" alt="">
           </div>
-           <h4>600+</h4>
+          <h4>600+</h4>
           <p>Projects</p>
         </div>
 
@@ -516,8 +517,8 @@
           <h4>500+</h4>
           <p>Company</p>
         </div>
-        </div>
-<div class="part5Subpart1">
+      </div>
+      <div class="part5Subpart1">
         <div class="part5CommentSection">
           <div class="commentIcon turnTheImage">
             <img [src]="imagesList.piChartIcon" alt="">
@@ -533,14 +534,48 @@
           <p>Awards</p>
         </div>
 
-        
-        </div>
+
+      </div>
     </div>
 
   </section>
   <section id="testimonial" class="part6">
 
+    <div class="part6Header">
+      <h2>TESTIMONIAL</h2>
+    </div>
+
+    <div class="part6CarouselEffect">
+
+      <p-carousel [value]="products" styleClass="custom-carousel" [numVisible]="2" [numScroll]="2" [circular]="true"
+        [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions" [showIndicators]="false" styleClass="carouselWidth">
+        <ng-template let-product pTemplate="item">
+          <div class="product-item">
+            <div class="product-item-content">
+              
+                <div class="userlogo">
+                    <img src="assets/images/{{product.userLogo}}" alt="NoImg">
+                </div>
+                <h3>Stars</h3>
+                <p>{{product.userDescription}}</p>
+                <h5>{{product.userName}}</h5>             
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
+
+
+    </div>
+
+
+
   </section>
+
+  <section id="blog" class="part7">
+
+  </section>
+
+
 
   <router-outlet></router-outlet>
 </div>

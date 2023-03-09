@@ -1,6 +1,8 @@
 import { Component } from '@angular/core'
 import { IsActiveMatchOptions } from '@angular/router'
 import { PrimeNGConfig } from 'primeng/api'
+import { Product } from 'src/modals/product'
+import { ProductService } from 'src/services/productServices'
 
 @Component({
   selector: 'app-root',
@@ -26,7 +28,7 @@ export class AppComponent {
   anchorTags
   sideBarNavLinks
   sideBarNavAnchor
-  part5SelcetedItem:string='ALL'
+  part5SelcetedItem: string = 'ALL'
   part4SelctedTypeToDisplayContent: string = 'Education'
   imagesList = {
     logoImage: './assets/images/logo.png',
@@ -45,17 +47,47 @@ export class AppComponent {
     part4P6: './assets/images/part4p6.jpg',
     part4P7: './assets/images/part4p7.jpg',
     part5MainpartImg1: './assets/images/part5MainpartImg1.jpg',
-    part5MainpartImg2 : './assets/images/part5MainpartImg2.jpg',
-    commentSmily:'./assets/images/commentSmily.svg',
-    basketballIcon : './assets/images/basketballIcon.png',
-    piChartIcon : './assets/images/piChartIcon.png',
-    arrowNavigatorIcon : './assets/images/arrowNavigatorIcon.png'
+    part5MainpartImg2: './assets/images/part5MainpartImg2.jpg',
+    commentSmily: './assets/images/commentSmily.svg',
+    basketballIcon: './assets/images/basketballIcon.png',
+    piChartIcon: './assets/images/piChartIcon.png',
+    arrowNavigatorIcon: './assets/images/arrowNavigatorIcon.png',
+    part6titleBackground: './assets/images/part6titleBackground.svg'
   }
+  products: Product[]
 
-  constructor (private primengConfig: PrimeNGConfig) {}
+  responsiveOptions
+
+  constructor (
+    private primengConfig: PrimeNGConfig,
+    private productServices:ProductService
+  ) {
+    this.responsiveOptions = [
+      {
+        breakpoint: '1024px',
+        numVisible: 2,
+        numScroll: 2
+      },
+      {
+        breakpoint: '950px',
+        numVisible: 1,
+        numScroll: 1
+      }
+      // ,
+      // {
+      //   breakpoint: '560px',
+      //   numVisible: 1,
+      //   numScroll: 1
+      // }
+    ]
+  }
 
   ngOnInit () {
     this.primengConfig.ripple = true
+    this.productServices.getProductsSmall().then(products => {
+      this.products = products
+    })
+
     this.liTagsList = document.querySelectorAll('.navLink')
     this.secTagsList = document.querySelectorAll('section')
     this.anchorTags = document.querySelectorAll('.addColor')
@@ -191,12 +223,8 @@ export class AppComponent {
     }
     e.target.classList.add('part5NavLiActive')
 
-    this.part5SelcetedItem = e.target.innerText;
-    console.log(this.part5SelcetedItem);
-    
-
-    
-    
+    this.part5SelcetedItem = e.target.innerText
+    console.log(this.part5SelcetedItem)
   }
 
   enablePart5DialogBox () {

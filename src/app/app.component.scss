@@ -509,12 +509,12 @@
 .part5 .part5Header {
     width: 100%;
     height: 10rem;
-    // border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    // gap: 3rem;
+    margin-top: 4rem;
+
 }
 
 .part5Mainpart {
@@ -649,28 +649,31 @@
     padding: 0.8rem 2.2rem;
 }
 
-.turnTheImage{
+.turnTheImage {
     transform: rotate(90deg);
 }
-.turnArrowIcon{
+
+.turnArrowIcon {
     transform: rotate(320deg);
 }
 
 
 
 @media screen and (max-width:1218px) {
-    
-    .part5Subpart{
-        gap:3rem !important;
+
+    .part5Subpart {
+        gap: 3rem !important;
     }
-    .part5Subpart1{
+
+    .part5Subpart1 {
         gap: 9rem !important;
     }
 
 }
+
 @media screen and (max-width:800px) {
-    
-    .part5Subpart1{
+
+    .part5Subpart1 {
         justify-content: center !important;
         gap: 2rem !important;
     }
@@ -678,13 +681,14 @@
 
 
 @media screen and (min-width:285px) and (max-width:305px) {
-    .part5CommentSection{
+    .part5CommentSection {
         width: 15rem !important;
     }
 }
+
 @media screen and (max-width:284px) {
-    .part5CommentSection{
-        width: 10rem !important ;
+    .part5CommentSection {
+        width: 10rem !important;
     }
 }
 
@@ -695,10 +699,11 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap:0px;
-    
+    gap: 0px;
+
 }
- .part5CommentSection {
+
+.part5CommentSection {
     width: 18rem;
     height: auto;
     display: flex;
@@ -706,17 +711,19 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 2rem;
-    
+
 }
-.part5Subpart1{
+
+.part5Subpart1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:0px;
+    gap: 0px;
     flex-wrap: wrap;
 
 }
- .part5CommentSection .commentIcon img {
+
+.part5CommentSection .commentIcon img {
     width: 100%;
     height: 3.5rem;
     object-fit: fill;
@@ -1255,9 +1262,75 @@
 
 .part6 {
     width: 100%;
-    height: 50rem;
+    height: auto;
     background: #fe6572 !important;
+    padding: 10px;
+
 }
+
+
+
+.part6 .part6Header {
+
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+
+}
+
+.part6 .part6Header h2 {
+    color: #fff;
+    font-weight: 700 !important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+
+}
+
+.part6 .part6Header::before {
+    content: '';
+    display: block;
+    height: 150px;
+    width: 270px;
+    position: absolute;
+    opacity: .15;
+    background-image: url('../assets/images/part6titleBackground.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+
+}
+
+.part6CarouselEffect {
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .goUpDiv {
@@ -1588,6 +1661,14 @@
 
 
 
+
+
+.part7 {
+    width: 100%;
+    height: 50rem;
+    background: #e6e6e6 !important;
+
+}
 
 
 
@@ -2526,6 +2607,112 @@
                 font-size: 0.8rem !important;
             }
 
+        }
+
+
+    }
+
+      @media screen and (max-width:300px) {
+
+
+            .part6 .part6Header h2 {
+                font-size: 1.5rem !important;
+
+            }
+
+            .part6 .part6Header::before {
+                height: 150px !important;
+                width: 230px !important;
+
+            }
+
+
+
+
+        }
+
+
+
+    .part6CarouselEffect {
+
+      
+        .product-item {
+            .product-item-content {
+                border-radius: 7px;
+                margin-bottom: 30px;
+                border: none;
+                padding: 1.25rem;
+                background-color: #fff;
+                margin: 0.8rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+
+            .userlogo {
+
+                height: 7rem;
+                margin-bottom: 1rem;
+            }
+
+            .userlogo img {
+                height: 100%;
+                object-fit: fill;
+                border-radius: 50% !important;
+            }
+
+            .product-item-content p {
+                color: #6c757d !important;
+                margin-bottom: 1rem;
+                word-wrap: break-word;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                text-align: center;
+
+
+            }
+
+            @media screen and (max-width:370px) {
+
+                .product-item-content p {
+                    font-size: 0.7rem !important;
+                    line-height: 1.4 !important;
+                }
+
+                .product-item-content h5 {
+                    font-size: 12px !important;
+                }
+
+
+            }
+
+
+
+            .product-item-content h5 {
+                letter-spacing: 1px;
+                color: #fe6572 !important;
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 0.5rem;
+                margin-bottom: 0.5rem;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+            }
+
+
+        }
+
+        .p-carousel .p-carousel-content .p-carousel-next:enabled,
+        .p-carousel .p-carousel-content .p-carousel-prev:enabled {
+            color: #343a40;
+            border-color: transparent;
+            background: #e9ecef;
         }
 
 
