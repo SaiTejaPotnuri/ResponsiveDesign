@@ -27,7 +27,8 @@
               </li>
               <li class="navLink"><a href="#blog" class="addColor" (click)="activeLinksWhhileClick($event)">blog</a>
               </li>
-              <li class="navLink"><a href="#" class="addColor" (click)="activeLinksWhhileClick($event)">contact</a></li>
+              <li class="navLink"><a href="#contact" class="addColor"
+                  (click)="activeLinksWhhileClick($event)">contact</a></li>
             </ul>
           </div>
         </div>
@@ -489,7 +490,7 @@
 
 
         <div class="part2ContactmeButton">
-          <button pButton pRipple type="button" label="Contact Me" class="p-button-rounded part1ButtonsStyle"></button>
+          <button pButton pRipple type="button" label="Load More" class="p-button-rounded part1ButtonsStyle"></button>
         </div>
 
 
@@ -548,17 +549,18 @@
     <div class="part6CarouselEffect">
 
       <p-carousel [value]="products" styleClass="custom-carousel" [numVisible]="2" [numScroll]="2" [circular]="true"
-        [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions" [showIndicators]="false" styleClass="carouselWidth">
+        [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions" [showIndicators]="false"
+        styleClass="carouselWidth">
         <ng-template let-product pTemplate="item">
           <div class="product-item">
             <div class="product-item-content">
-              
-                <div class="userlogo">
-                    <img src="assets/images/{{product.userLogo}}" alt="NoImg">
-                </div>
-                <h3>Stars</h3>
-                <p>{{product.userDescription}}</p>
-                <h5>{{product.userName}}</h5>             
+
+              <div class="userlogo">
+                <img src="assets/images/{{product.userLogo}}" alt="NoImg">
+              </div>
+              <h3>Stars</h3>
+              <p>{{product.userDescription}}</p>
+              <h5>{{product.userName}}</h5>
             </div>
           </div>
         </ng-template>
@@ -575,6 +577,111 @@
 
   </section>
 
+  <section id="contact" class="part8">
+
+    <div class="part8HeaderContainer">
+      <h2>Say Hello</h2>
+    </div>
+
+    <div class="part8MainPart">
+      <div class="part8Subpart1">
+
+        <div class="phoneDetailsDiv">
+
+          <div class="phoneIconDiv">
+            <div class="phoneIcon">
+              <img [src]="imagesList.phoneIcon" alt="">
+            </div>
+          </div>
+
+          <div class="phoneIconContent">
+            <h6>Phone</h6>
+            <h5>012-456-7865</h5>
+          </div>
+
+
+        </div>
+
+
+        <div class="phoneDetailsDiv">
+        
+          <div class="phoneIconDiv">
+            <div class="phoneIcon">
+              <img [src]="imagesList.emailIcon" alt="">
+            </div>
+          </div>
+        
+          <div class="phoneIconContent">
+            <h6>EMAIL</h6>
+            <h5>contact@gmail.com</h5>
+          </div>
+        
+        
+        </div>
+
+
+
+        <div class="phoneDetailsDiv">
+        
+          <div class="phoneIconDiv">
+            <div class="phoneIcon">
+              <img [src]="imagesList.addressIcon" alt="">
+            </div>
+          </div>
+        
+          <div class="phoneIconContent">
+            <h6>ADDRESS</h6>
+            <h5>1231 Road. FL. USA</h5>
+          </div>
+        
+        
+        </div>
+
+
+
+
+      </div>
+      <form class="part8Subpart2">
+
+          <h4>Get In Touch</h4>
+
+          <div class="nameInputDiv">
+                  <input type="text" class="p-inputtext-lg" placeholder="Name" pInputText required/>
+          </div>
+            <div class="nameInputDiv">
+              <input type="email" class="p-inputtext-lg" placeholder="Email" pInputText required/>
+            </div>
+
+              <div class="nameInputDiv">
+                  <textarea rows="2" cols="30" placeholder="Message" pInputTextarea required></textarea>
+              </div>
+
+              <div class="part8SendButton">
+                <button pButton pRipple type="button" label="Send" class="p-button-rounded part1ButtonsStyle"></button>
+              </div>
+
+
+
+      </form>
+
+    </div>
+
+
+
+  </section>
+  <div class="CVResumefooter">
+
+    <div class="socialMediaIconsPartFooter">
+      <a href="#"><img [src]="imagesList.facebookLogo1" alt="NoImg"></a>
+      <a href="#"><img [src]="imagesList.twitterLogo1" alt="NoImg"></a>
+      <a href="#"><img [src]="imagesList.googleLogo1" alt="NoImg"></a>
+      <a href="#"><img [src]="imagesList.dotsIcon1" alt="NoImg"></a>
+    </div>
+
+    <p>2019 @ All Rights Reserved by - ANITO</p>
+
+
+  </div>
 
 
   <router-outlet></router-outlet>

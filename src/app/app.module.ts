@@ -13,7 +13,9 @@ import { DialogModule } from 'primeng/dialog'
 import { CarouselModule } from 'primeng/carousel'
 import { ProductService } from 'src/services/productServices';
 import { HttpClientModule } from '@angular/common/http'
+import { InputTextareaModule } from 'primeng/inputtextarea'
 
+import { InputTextModule } from 'primeng/inputtext'
 
 
 
@@ -39,7 +41,12 @@ import { HttpClientModule } from '@angular/common/http'
     OverlayPanelModule,
     DialogModule,
     CarouselModule,
-    HttpClientModule
+    HttpClientModule,
+    InputTextModule,
+    InputTextareaModule
+
+
+    
 
     
 

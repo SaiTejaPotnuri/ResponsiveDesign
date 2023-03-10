@@ -34,9 +34,13 @@ export class AppComponent {
     logoImage: './assets/images/logo.png',
     logoDark: './assets/images/logo-dark.png',
     facebookLogo: './assets/images/facebook.png',
+    facebookLogo1: './assets/images/facebook1.png',
     twitterLogo: './assets/images/twitterIcon.png',
+    twitterLogo1: './assets/images/twitter2.png',
+    googleLogo1: './assets/images/googleIcon2.png',
     googleLogo: './assets/images/googleIcon.png',
     dotsIcon: './assets/images/dotsIcon.svg',
+    dotsIcon1: './assets/images/twoDots.png',
     aboutImage: './assets/images/about.png',
     mouseIcon: './assets/images/mouseIcon.svg',
     part4P1: './assets/images/part4p1.jpg',
@@ -46,13 +50,19 @@ export class AppComponent {
     part4P5: './assets/images/part4p5.jpg',
     part4P6: './assets/images/part4p6.jpg',
     part4P7: './assets/images/part4p7.jpg',
-    part5MainpartImg1: './assets/images/part5MainpartImg1.jpg',
+    part5MainpartImg1: './assets/images/p4.jpg',
     part5MainpartImg2: './assets/images/part5MainpartImg2.jpg',
     commentSmily: './assets/images/commentSmily.svg',
     basketballIcon: './assets/images/basketballIcon.png',
     piChartIcon: './assets/images/piChartIcon.png',
     arrowNavigatorIcon: './assets/images/arrowNavigatorIcon.png',
-    part6titleBackground: './assets/images/part6titleBackground.svg'
+    part6titleBackground: './assets/images/part6titleBackground.svg',
+    phoneIcon : './assets/images/phoneIcon.png',
+    emailIcon :'./assets/images/email.png',
+    addressIcon: './assets/images/address.png'
+
+
+
   }
   products: Product[]
 
@@ -65,7 +75,7 @@ export class AppComponent {
     this.responsiveOptions = [
       {
         breakpoint: '1024px',
-        numVisible: 2,
+        numVisible: 3,
         numScroll: 2
       },
       {
