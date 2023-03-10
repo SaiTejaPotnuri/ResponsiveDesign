@@ -224,12 +224,15 @@
 
 }
 
+
 .socialMediaIconsPart a {
     text-decoration: none;
     color: #000;
-
     padding: 15px;
+
 }
+
+
 
 .socialMediaIconsPart a img {
 
@@ -509,12 +512,12 @@
 .part5 .part5Header {
     width: 100%;
     height: 10rem;
-    // border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    // gap: 3rem;
+    margin-top: 4rem;
+
 }
 
 .part5Mainpart {
@@ -523,7 +526,7 @@
     margin-right: 2%;
     height: auto;
     //border: 1px solid greenyellow;
-    margin-bottom: 10rem;
+    margin-bottom: 1rem;
     padding: 10px;
 
 }
@@ -539,6 +542,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    gap: 1.5rem;
 
 }
 
@@ -649,28 +653,31 @@
     padding: 0.8rem 2.2rem;
 }
 
-.turnTheImage{
+.turnTheImage {
     transform: rotate(90deg);
 }
-.turnArrowIcon{
+
+.turnArrowIcon {
     transform: rotate(320deg);
 }
 
 
 
 @media screen and (max-width:1218px) {
-    
-    .part5Subpart{
-        gap:3rem !important;
+
+    .part5Subpart {
+        gap: 3rem !important;
     }
-    .part5Subpart1{
+
+    .part5Subpart1 {
         gap: 9rem !important;
     }
 
 }
+
 @media screen and (max-width:800px) {
-    
-    .part5Subpart1{
+
+    .part5Subpart1 {
         justify-content: center !important;
         gap: 2rem !important;
     }
@@ -678,13 +685,14 @@
 
 
 @media screen and (min-width:285px) and (max-width:305px) {
-    .part5CommentSection{
+    .part5CommentSection {
         width: 15rem !important;
     }
 }
+
 @media screen and (max-width:284px) {
-    .part5CommentSection{
-        width: 10rem !important ;
+    .part5CommentSection {
+        width: 10rem !important;
     }
 }
 
@@ -695,10 +703,11 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap:0px;
-    
+    gap: 0px;
+
 }
- .part5CommentSection {
+
+.part5CommentSection {
     width: 18rem;
     height: auto;
     display: flex;
@@ -706,17 +715,19 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 2rem;
-    
+
 }
-.part5Subpart1{
+
+.part5Subpart1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:0px;
+    gap: 0px;
     flex-wrap: wrap;
 
 }
- .part5CommentSection .commentIcon img {
+
+.part5CommentSection .commentIcon img {
     width: 100%;
     height: 3.5rem;
     object-fit: fill;
@@ -1255,9 +1266,76 @@
 
 .part6 {
     width: 100%;
-    height: 50rem;
+    height: auto;
     background: #fe6572 !important;
+    padding: 10px;
+
 }
+
+
+
+.part6 .part6Header {
+
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+
+}
+
+.part6 .part6Header h2 {
+    color: #fff;
+    font-weight: 700 !important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+
+}
+
+.part6 .part6Header::before {
+    content: '';
+    display: block;
+    height: 150px;
+    width: 270px;
+    position: absolute;
+    opacity: .15;
+    background-image: url('../assets/images/part6titleBackground.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+
+}
+
+.part6CarouselEffect {
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .goUpDiv {
@@ -1303,6 +1381,23 @@
     margin-top: 2rem;
 
 }
+
+
+
+.part8SendButton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.5rem;
+
+}
+
+
+
+
+
+
 
 
 .part2Container {
@@ -1587,6 +1682,325 @@
 }
 
 
+
+
+
+.part7 {
+    width: 100%;
+    height: 50rem;
+    background: #e6e6e6 !important;
+
+}
+
+
+
+.part8 {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.part8 .part8HeaderContainer {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    margin-top: 7rem;
+    margin-bottom: 6rem;
+}
+
+.part8 .part8HeaderContainer h2 {
+    font-weight: 700 !important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase;
+    color: #fe6572;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+
+}
+
+.part8 .part8HeaderContainer::before {
+    content: '';
+    display: block;
+    height: 150px;
+    width: 270px;
+    position: absolute;
+    opacity: .15;
+    background-image: url('../assets/images/part8HeaderBackground.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
+
+.part8MainPart {
+    width: 100%;
+    height: auto;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 15px;
+    flex-direction: row;
+
+}
+
+@media screen and (min-width:330px) and  (max-width:800px) {
+
+    .part8MainPart {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .part8Subpart1 {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .part8Subpart2 {
+        width: 100% !important;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center !important;
+        flex-direction: column;
+        padding: 15px;
+
+    }
+
+}
+
+@media screen and (max-width:330px) {
+
+    .part8MainPart {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .part8Subpart1 {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+
+    .part8Subpart2 {
+        width: 100% !important;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center !important;
+        flex-direction: column;
+        padding: 15px;
+
+    }
+    .phoneDetailsDiv{
+        height: auto !important;
+    }
+    .phoneIconDiv{
+        width: auto !important;
+        height: auto !important;
+        padding: 8px !important;
+    }
+    .phoneIconContent{
+        height: auto !important;
+        overflow: auto;
+    }
+    .part8HeaderContainer::before{
+        width: 237px !important;
+    }
+    
+
+}
+
+
+.part8Subpart1 {
+    width: 45%;
+    height: 20rem;
+
+}
+
+.part8Subpart2 {
+    width: 55%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15px;
+
+}
+
+.part8Subpart2 h4 {
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    margin-bottom: 1.5rem !important;
+    letter-spacing: 4px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: #212529;
+
+}
+
+.nameInputDiv {
+    width: 100%;
+    margin-bottom: 0.8rem;
+
+}
+
+
+
+
+.phoneDetailsDiv {
+    width: 100%;
+    height: 5rem;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    border: none;
+    background: #e6e6e6 !important;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.phoneIconDiv {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 13%;
+    background: #fe6572 !important;
+    color: #fff !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+
+}
+
+.phoneIcon {
+    width: 1.5rem;
+
+}
+
+.phoneIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+
+}
+
+.phoneIconContent {
+    width: fit-content;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.phoneIconContent h6 {
+    letter-spacing: 1px;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    line-height: 1.2;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #212529;
+}
+
+.phoneIconContent h5 {
+    // letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+
+
+
+
+
+
+
+
+
+.CVResumefooter {
+    width: 100%;
+    height: 12rem;
+    padding: 50px 0;
+    background-color: #323232;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.socialMediaIconsPartFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+.socialMediaIconsPartFooter a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+    padding: 15px;
+}
+
+.socialMediaIconsPartFooter a img {
+
+    height: 18px;
+    cursor: pointer;
+}
+
+
+
+.CVResumefooter p {
+    color: rgba(255, 255, 255, .5);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@media screen and (max-width:300px) {
+
+    .CVResumefooter p {
+        font-size: 0.8rem;
+
+    }
+
+}
 
 
 
@@ -2329,7 +2743,8 @@
 
 
     .hireButton,
-    .part2ContactmeButton {
+    .part2ContactmeButton,
+    .part8SendButton {
 
 
         .p-button {
@@ -2456,6 +2871,8 @@
 
 
 
+
+
     .part5footerButtonDiv {
         .p-button.p-button-secondary {
             color: #ffffff;
@@ -2529,6 +2946,207 @@
         }
 
 
+    }
+
+    @media screen and (max-width:300px) {
+
+
+        .part6 .part6Header h2 {
+            font-size: 1.5rem !important;
+
+        }
+
+        .part6 .part6Header::before {
+            height: 150px !important;
+            width: 230px !important;
+
+        }
+
+
+
+
+    }
+
+
+
+    @media screen and (min-width:310px) and (max-width:420px) {
+
+        .p-carousel .p-carousel-content .p-carousel-next:enabled,
+        .p-carousel .p-carousel-content .p-carousel-prev:enabled {
+            margin: 0px !important;
+        }
+
+        .part6 .part6Header {
+            margin-bottom: 5rem !important;
+        }
+
+        .part6CarouselEffect {
+            .product-item {
+                .product-item-content {
+
+
+                    margin: 0.3rem !important;
+
+
+                }
+            }
+
+        }
+    }
+
+
+    @media screen and (max-width:310px) {
+
+        .part6CarouselEffect {
+                padding: 0px !important;
+            .product-item {
+                .product-item-content {
+
+                    padding: 3px !important;
+                    margin: 0.1rem !important;
+
+
+                }
+
+                .product-item-content {
+                    margin-bottom: 0.3rem !important;
+                }
+
+                .userlogo {
+                    height: 5rem !important;
+
+                }
+
+
+            }
+
+            .p-carousel .p-carousel-content .p-carousel-next:enabled,
+            .p-carousel .p-carousel-content .p-carousel-prev:enabled {
+                width: 1.5rem !important;
+                height: 1.5rem !important;
+                margin: 0px !important;
+            }
+
+        }
+
+        .part6 .part6Header {
+            margin-bottom: 3rem !important;
+        }
+    }
+
+
+    .part6CarouselEffect {
+
+
+        .product-item {
+            .product-item-content {
+                border-radius: 7px;
+                margin-bottom: 30px;
+                border: none;
+                padding: 1.25rem;
+                background-color: #fff;
+                margin: 0.8rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+
+            .product-item-content p {
+                margin-bottom: 0.6rem !important;
+                line-height: 1.2rem !important;
+            }
+
+            .userlogo {
+
+                height: 7rem;
+                margin-bottom: 1rem;
+            }
+
+            .userlogo img {
+                height: 100%;
+                object-fit: fill;
+                border-radius: 50% !important;
+            }
+
+            .product-item-content p {
+                color: #6c757d !important;
+                margin-bottom: 1rem;
+                word-wrap: break-word;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                text-align: center;
+
+
+            }
+
+            @media screen and (max-width:359px) {
+
+                .product-item-content p {
+                    font-size: 0.7rem !important;
+                    line-height: 1.4 !important;
+                }
+
+                .product-item-content h5 {
+                    font-size: 12px !important;
+                }
+
+
+            }
+
+
+
+            .product-item-content h5 {
+                letter-spacing: 1px;
+                color: #fe6572 !important;
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 0.5rem;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+            }
+
+
+        }
+
+        .p-carousel .p-carousel-content .p-carousel-next:enabled,
+        .p-carousel .p-carousel-content .p-carousel-prev:enabled {
+            color: #343a40;
+            border-color: transparent;
+            background: #e9ecef;
+        }
+
+
+    }
+
+    .nameInputDiv {
+
+        .p-inputtext.p-inputtext-lg,
+        .p-inputtext {
+            width: 100%;
+            padding: 0.9375rem 0.1rem !important;
+            font-size: 1rem !important;
+
+        }
+
+        .p-inputtext {
+            border: none !important;
+            border-bottom: 2px solid #ebebeb !important;
+            border-radius: 0px !important;
+        }
+
+        .p-inputtext:enabled:focus {
+
+            box-shadow: none !important;
+            border: none !important;
+            border-bottom: 2px solid #fe6572 !important;
+
+        }
     }
 
 

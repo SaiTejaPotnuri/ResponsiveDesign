@@ -1,6 +1,8 @@
 import { Component } from '@angular/core'
 import { IsActiveMatchOptions } from '@angular/router'
 import { PrimeNGConfig } from 'primeng/api'
+import { Product } from 'src/modals/product'
+import { ProductService } from 'src/services/productServices'
 
 @Component({
   selector: 'app-root',
@@ -26,15 +28,19 @@ export class AppComponent {
   anchorTags
   sideBarNavLinks
   sideBarNavAnchor
-  part5SelcetedItem:string='ALL'
+  part5SelcetedItem: string = 'ALL'
   part4SelctedTypeToDisplayContent: string = 'Education'
   imagesList = {
     logoImage: './assets/images/logo.png',
     logoDark: './assets/images/logo-dark.png',
     facebookLogo: './assets/images/facebook.png',
+    facebookLogo1: './assets/images/facebook1.png',
     twitterLogo: './assets/images/twitterIcon.png',
+    twitterLogo1: './assets/images/twitter2.png',
+    googleLogo1: './assets/images/googleIcon2.png',
     googleLogo: './assets/images/googleIcon.png',
     dotsIcon: './assets/images/dotsIcon.svg',
+    dotsIcon1: './assets/images/twoDots.png',
     aboutImage: './assets/images/about.png',
     mouseIcon: './assets/images/mouseIcon.svg',
     part4P1: './assets/images/part4p1.jpg',
@@ -44,18 +50,54 @@ export class AppComponent {
     part4P5: './assets/images/part4p5.jpg',
     part4P6: './assets/images/part4p6.jpg',
     part4P7: './assets/images/part4p7.jpg',
-    part5MainpartImg1: './assets/images/part5MainpartImg1.jpg',
-    part5MainpartImg2 : './assets/images/part5MainpartImg2.jpg',
-    commentSmily:'./assets/images/commentSmily.svg',
-    basketballIcon : './assets/images/basketballIcon.png',
-    piChartIcon : './assets/images/piChartIcon.png',
-    arrowNavigatorIcon : './assets/images/arrowNavigatorIcon.png'
-  }
+    part5MainpartImg1: './assets/images/p4.jpg',
+    part5MainpartImg2: './assets/images/part5MainpartImg2.jpg',
+    commentSmily: './assets/images/commentSmily.svg',
+    basketballIcon: './assets/images/basketballIcon.png',
+    piChartIcon: './assets/images/piChartIcon.png',
+    arrowNavigatorIcon: './assets/images/arrowNavigatorIcon.png',
+    part6titleBackground: './assets/images/part6titleBackground.svg',
+    phoneIcon : './assets/images/phoneIcon.png',
+    emailIcon :'./assets/images/email.png',
+    addressIcon: './assets/images/address.png'
 
-  constructor (private primengConfig: PrimeNGConfig) {}
+
+
+  }
+  products: Product[]
+
+  responsiveOptions
+
+  constructor (
+    private primengConfig: PrimeNGConfig,
+    private productServices:ProductService
+  ) {
+    this.responsiveOptions = [
+      {
+        breakpoint: '1024px',
+        numVisible: 3,
+        numScroll: 2
+      },
+      {
+        breakpoint: '950px',
+        numVisible: 1,
+        numScroll: 1
+      }
+      // ,
+      // {
+      //   breakpoint: '560px',
+      //   numVisible: 1,
+      //   numScroll: 1
+      // }
+    ]
+  }
 
   ngOnInit () {
     this.primengConfig.ripple = true
+    this.productServices.getProductsSmall().then(products => {
+      this.products = products
+    })
+
     this.liTagsList = document.querySelectorAll('.navLink')
     this.secTagsList = document.querySelectorAll('section')
     this.anchorTags = document.querySelectorAll('.addColor')
@@ -191,12 +233,8 @@ export class AppComponent {
     }
     e.target.classList.add('part5NavLiActive')
 
-    this.part5SelcetedItem = e.target.innerText;
-    console.log(this.part5SelcetedItem);
-    
-
-    
-    
+    this.part5SelcetedItem = e.target.innerText
+    console.log(this.part5SelcetedItem)
   }
 
   enablePart5DialogBox () {

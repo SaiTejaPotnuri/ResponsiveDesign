@@ -10,6 +10,14 @@ import { RouterModule, Routes } from '@angular/router'
 import { CardModule } from 'primeng/card'
 import { OverlayPanelModule } from 'primeng/overlaypanel'
 import { DialogModule } from 'primeng/dialog'
+import { CarouselModule } from 'primeng/carousel'
+import { ProductService } from 'src/services/productServices';
+import { HttpClientModule } from '@angular/common/http'
+import { InputTextareaModule } from 'primeng/inputtextarea'
+
+import { InputTextModule } from 'primeng/inputtext'
+
+
 
 
 
@@ -31,7 +39,17 @@ import { DialogModule } from 'primeng/dialog'
     RouterModule,
     CardModule,
     OverlayPanelModule,
-    DialogModule
+    DialogModule,
+    CarouselModule,
+    HttpClientModule,
+    InputTextModule,
+    InputTextareaModule
+
+
+    
+
+    
+
 
 
 
@@ -41,7 +59,7 @@ import { DialogModule } from 'primeng/dialog'
 
    
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

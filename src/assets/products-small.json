@@ -1,0 +1,35 @@
+{
+    "data": [
+        {
+            "id": "1000",
+            "userLogo": "manAvatar1.jpg",
+            "userDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur debitis dignissimos et eum impedit inventore iure laborum porro!",
+            "userName": "Kelcey Altham"
+            
+        },
+        {
+            "id": "1001",
+            "userLogo": "womenAvatar1.jpg",
+           "userDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur debitis dignissimos et eum impedit inventore iure laborum porro!",
+            "userName": "Susan Ferry"
+        },
+        {
+            "id": "1002",
+            "userLogo": "manAvatar2.jpg",
+           "userDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur debitis dignissimos et eum impedit inventore iure laborum porro!",
+            "userName": "Reinaldo Yockney"
+        },
+        {
+            "id": "1003",
+            "userLogo": "manAvatar3.jpg",
+           "userDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur debitis dignissimos et eum impedit inventore iure laborum porro!",
+            "userName": "Joellyn Cleveland"
+        },
+        {
+            "id": "1004",
+            "userLogo": "manAvatar4.jpg",
+           "userDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur debitis dignissimos et eum impedit inventore iure laborum porro!",
+            "userName": "Elton Greville"
+        }
+    ]
+}
